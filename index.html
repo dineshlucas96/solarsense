@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>SolarSense — AI Solar Advisor</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☀️</text></svg>">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ══════════ LANDING ══════════ -->
+  <div id="landing" class="page active">
+    <nav>
+      <div class="nav-logo">
+        <div class="nav-icon">☀️</div>
+        <div class="nav-title">Solar<span>Sense</span></div>
+      </div>
+      <button class="nav-cta" onclick="goToChat()">Try Free →</button>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-badge"><span></span> AI-Powered Solar Advisor</div>
+      <h1>Go Solar <em>Smarter</em><br />with AI Guidance</h1>
+      <p>Answer a few simple questions — or upload a photo of your roof — and get a personalized solar plan with costs,
+        savings, and next steps in under 5 minutes.</p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="goToChat()">☀️ Get My Solar Plan</button>
+        <button class="btn-secondary"
+          onclick="document.getElementById('how-it-works').scrollIntoView({behavior:'smooth'})">How it works ↓</button>
+      </div>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-num">5 min</div>
+        <div class="stat-label">To get your plan</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">₹0</div>
+        <div class="stat-label">Cost to use</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">80%</div>
+        <div class="stat-label">Bill reduction</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">10yr</div>
+        <div class="stat-label">Savings plan</div>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="section-tag">✦ Features</div>
+      <div class="section-title">Everything to go solar<br />— in one chat</div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feat-icon orange">📸</div>
+          <h3>Roof Photo Analysis</h3>
+          <p>Upload a photo of your roof and AI will analyze its solar suitability, obstructions, and give a score out
+            of 10.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon green">💰</div>
+          <h3>Cost &amp; Savings Calculator</h3>
+          <p>Get installation cost, annual savings, payback period, and 10-year net savings personalized to your home.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon blue">🏛️</div>
+          <h3>Subsidy Finder</h3>
+          <p>Discover government subsidies in your region — including PM Surya Ghar and state solar schemes in India.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon purple">🌱</div>
+          <h3>Environmental Impact</h3>
+          <p>See your CO₂ offset per year and how many trees your solar system is equivalent to planting annually.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="how-it-works" id="how-it-works">
+      <div class="section-tag">✦ How It Works</div>
+      <div class="section-title">From curious to solar-ready<br />in 4 simple steps</div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h4>Tell us where you live</h4>
+            <p>Share your city and country so we can factor in local sunlight, electricity tariffs, and government
+              subsidies.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h4>Share your electricity bill</h4>
+            <p>Your monthly bill helps us calculate exactly how much solar can save you and what system size you need.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h4>Upload your roof photo</h4>
+            <p>Our AI analyzes your roof for type, condition, shading, and solar suitability — completely automatically.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h4>Get your personalized solar plan</h4>
+            <p>Receive a full report with costs, savings, CO₂ impact, available subsidies, and clear next steps.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-section">
+      <h2>Ready to make the switch? ☀️</h2>
+      <p>Get your free personalized solar plan in under 5 minutes. No sign-up needed.</p>
+      <button class="btn-primary" onclick="goToChat()" style="margin:0 auto;">Start My Free Solar Plan →</button>
+    </div>
+
+    <footer>
+      Built for <strong>AI for Sustainable Energy &amp; Climate Solutions</strong> <br>
+      <span style="opacity:0.5;margin-top:6px;display:block;">SolarSense 2026</span>
+    </footer>
+  </div>
+
+  <!-- ══════════ CHATBOT ══════════ -->
+  <div id="chatbot" class="page">
+    <div class="chat-header">
+      <button class="back-btn" onclick="goToLanding()">←</button>
+      <div class="chat-header-info">
+        <h3>SolarSense AI</h3>
+        <p>● Online — Ready to help</p>
+      </div>
+      <div class="chat-header-right">
+        <div class="chat-header-icon">☀️</div>
+      </div>
+    </div>
+
+    <div id="chat-box"></div>
+
+    <div id="img-bar">
+      <img id="img-thumb" src="" alt="roof" />
+      <div class="img-bar-info">
+        <div class="img-lbl">📸 Roof Photo Ready</div>
+        <div class="img-fname" id="img-fname">photo.jpg</div>
+      </div>
+      <button id="rm-img">×</button>
+    </div>
+
+    <div class="input-zone">
+      <div class="input-row">
+        <button id="upload-btn">📎</button>
+        <input type="file" id="file-input" accept="image/*" />
+        <textarea id="user-input" placeholder="Type or upload roof photo 📎..." rows="1"></textarea>
+        <button id="send-btn">
+          <svg viewBox="0 0 24 24">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+          </svg>
+        </button>
+      </div>
+      <div class="quick-chips">
+        <div class="chip" onclick="quickSend('Hi, I want to go solar')">🌞 Get started</div>
+        <div class="chip" onclick="quickSend('How much will solar cost me?')">💰 Cost estimate</div>
+        <div class="chip" onclick="quickSend('What subsidies are available in India?')">🏛️ India subsidies</div>
+        <div class="chip" onclick="quickSend('How many panels do I need?')">⚡ Panel count</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
