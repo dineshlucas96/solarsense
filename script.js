@@ -1,7 +1,7 @@
 // ═══════════════════════════════════════════
 // 🔑 PASTE YOUR GEMINI API KEY HERE
 // Get free key from: aistudio.google.com
-const API_KEY = 'AIzaSyD9bnmjOXMGzdEMwlOXziczj94HjuESj38';
+const API_KEY = '';
 // ═══════════════════════════════════════════
 
 const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
